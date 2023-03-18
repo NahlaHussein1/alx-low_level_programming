@@ -1,16 +1,16 @@
-#include <stdio.h>
+i#include <stdio.h>
 /**
  * main - main block
- * Description: Print all numbers of base 10, starting from 0.
+ * Description: Print the alphabet in reverse order in lowercase.
  * Return: 0
  */
 int main(void)
 {
-	int i;
+	char c;
 
-	for (i = 0; i < 10; i++)
+	for (c = 'z'; c >= 'a'; c--)
 	{
-		printf("%i", i);
+		putchar(c);
 	}
 	putchar('\n');
 
