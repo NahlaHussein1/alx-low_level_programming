@@ -1,4 +1,4 @@
-i#include <stdio.h>
+#include <stdio.h>
 /**
  * main - main block
  * Description: Print the alphabet in reverse order in lowercase.
