@@ -1,5 +1,5 @@
-#ifndef LIST.H
-#define LIST.H
+#ifndef LIST_H
+#define LIST_H
 
 /*
  * struct Main_s - singly linked list
@@ -12,7 +12,7 @@
 typedef struct list_s
 {
 	char *str;
-	undigned int len;
+	unsigned int len;
 	struct list_s *next;
 } list_t;
 
