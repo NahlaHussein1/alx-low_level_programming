@@ -1,23 +1,17 @@
-#include "main.h"
+#include "lists.h"
 
 /**
- * print_most_numbers -  checks for checks for a digit (0 through 9).
- *
- * Return: Always 0.
+ * free_listint - frees a linked list
+ * @head: listint_t list to be freed
  */
-void print_most_numbers(void)
+void free_listint(listint_t *head)
 {
-	int c;
+	listint_t *temp;
 
-	for (c = 48; c < 58; c++)
+	while (head)
 	{
-		if (c != 50)
-		{
-			if (c != 52)
-			{
-				_putchar(c);
-			}
-		}
+		temp = head->next;
+		free(head);
+		head = temp;
 	}
-	_putchar('\n');
 }
